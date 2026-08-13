@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Robotics, controls, embedded AI, and mechanical engineering projects by Nachiketa Gulati.">
+  <meta name="description" content="Robotics, mechanical design, and embedded systems projects by Nachiketa Gulati.">
   <title>Nachiketa Gulati Portfolio</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
@@ -13,70 +13,113 @@
     <a class="brand" href="#top" aria-label="Nachiketa Gulati, home">NG<span class="brand-dot">.</span></a>
     <nav aria-label="Primary navigation">
       <a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#about">About</a>
-      <a class="nav-cta" href="mailto:nachi.gulati@gmail.com">Let's talk ↗</a>
     </nav>
   </header>
 
   <section class="hero" id="top">
-    <div class="hero-kicker"><span></span> Mechanical engineering + robotics</div>
-    <h1>I build robots that <em>work.</em></h1>
+    <div class="hero-identity"><span class="hero-name">Nachi Gulati</span><span>Mechanical Engineering</span></div>
     <div class="hero-bottom">
-      <p>I'm Nachiketa Gulati—an engineer focused on the full stack of physical systems, from CAD and circuitry to controls, computer vision, and embedded AI.</p>
-      <div class="hero-actions">
-        <a class="button button-primary" href="#projects">Explore my work <span>↓</span></a>
-        <a class="text-link" href="./Nachiketa-Gulati-Resume.pdf" download>Résumé ↗</a>
-      </div>
+      <p>Incoming UT Austin engineer. I'm super interested in robotics, machine learning, and sports</p>
     </div>
-    <div class="hero-rail" aria-hidden="true"><span>CAD</span><i></i><span>Electronics</span><i></i><span>Code</span><i></i><span>Controls</span></div>
   </section>
 
   <section class="section projects-section" id="projects">
     <div class="section-heading">
       <div><span class="eyebrow">01 / SELECTED WORK</span><h2>Projects</h2></div>
-      <p>Built, tested, broken, and rebuilt. Each project connects software to the real world.</p>
+      <p>Photos, clips, etc from some of my projects.</p>
     </div>
     <div class="project-list">
-      <article class="project">
-        <div class="media-placeholder"><span>MEDIA / 01</span><small>Add photo, video, or GIF</small></div>
-        <div class="project-copy"><div class="project-meta"><span>EMBEDDED AI / ROBOTICS</span><span>01 / 05</span></div><h3>Voice-Controlled ESP32-S3 Rover</h3><p>A rover that listens, transcribes speech with Whisper, interprets commands through a Gemma LLM pipeline, and executes motion on an ESP32-S3.</p><ul class="tags"><li>ESP32-S3</li><li>Whisper</li><li>Gemma</li><li>CircuitPython</li></ul><span class="project-link muted">Case study coming soon ↗</span></div>
+      <article class="project" id="rover">
+        <div class="project-visuals"><div class="media-placeholder project-cover"><span>ROVER / COVER</span><small>Put your best photo, GIF, or demo here</small></div><div class="media-thumbnails"><div class="media-slot">BUILD PHOTO</div><div class="media-slot">DRIVING CLIP</div></div></div>
+        <div class="project-copy"><div class="project-meta"><span>LearnToBot</span><span>01 / 05</span></div><h3>Voice-Controlled ESP32-S3 Rover</h3><p>Voice commands in. Motor control out.</p><ul class="tags"><li>ESP32-S3</li><li>Whisper</li><li>Gemma</li><li>CircuitPython</li></ul><button class="project-link project-open" type="button" data-project="rover">Learn more <span>&rarr;</span></button></div>
       </article>
-      <article class="project">
-        <div class="media-placeholder"><span>MEDIA / 02</span><small>Add photo, video, or GIF</small></div>
-        <div class="project-copy"><div class="project-meta"><span>CONTROLS / RAPID PROTOTYPING</span><span>02 / 05</span></div><h3>PID Self-Balancing Robot</h3><p>A two-wheeled balancing platform built from the controller up: IMU filtering, PID tuning, motor control, power distribution, and a reproducible 3D-printed chassis.</p><ul class="tags"><li>PID Control</li><li>MPU6050</li><li>SolidWorks</li><li>3D Printing</li></ul><span class="project-link muted">Case study coming soon ↗</span></div>
+      <article class="project" id="balancing-robot">
+        <div class="project-visuals"><div class="media-placeholder project-cover"><span>BALANCING ROBOT / COVER</span><small>Put your best photo, GIF, or demo here</small></div><div class="media-thumbnails"><div class="media-slot">CHASSIS PHOTO</div><div class="media-slot">TUNING CLIP</div></div></div>
+        <div class="project-copy"><div class="project-meta"><span>LearnToBot</span><span>02 / 05</span></div><h3>PID Self-Balancing Robot</h3><p>IMU feedback, PID control, and a printed chassis.</p><ul class="tags"><li>PID Control</li><li>MPU6050</li><li>SolidWorks</li><li>3D Printing</li></ul><button class="project-link project-open" type="button" data-project="balancing">Learn more <span>&rarr;</span></button></div>
       </article>
-      <article class="project">
-        <div class="media-placeholder"><span>MEDIA / 03</span><small>Add photo, video, or GIF</small></div>
-        <div class="project-copy"><div class="project-meta"><span>COMPUTER VISION / MECHATRONICS</span><span>03 / 05</span></div><h3>OpenCV Soccer Goalie</h3><p>A real-time vision system that tracks a moving ball, estimates its trajectory, and commands a physical goalkeeper mechanism to intercept the shot.</p><ul class="tags"><li>OpenCV</li><li>Python</li><li>Trajectory Tracking</li><li>Mechanism Design</li></ul><span class="project-link muted">Case study coming soon ↗</span></div>
+      <article class="project" id="soccer-goalie">
+        <div class="project-visuals"><div class="media-placeholder project-cover"><span>SOCCER GOALIE / COVER</span><small>Put your best photo, GIF, or demo here</small></div><div class="media-thumbnails"><div class="media-slot">VISION VIEW</div><div class="media-slot">SAVE CLIP</div></div></div>
+        <div class="project-copy"><div class="project-meta"><span>LearnToBot</span><span>03 / 05</span></div><h3>OpenCV Soccer Goalie</h3><p>Tracks the ball. Moves to block it.</p><ul class="tags"><li>OpenCV</li><li>Python</li><li>Trajectory Tracking</li><li>Mechanism Design</li></ul><button class="project-link project-open" type="button" data-project="goalie">Learn more <span>&rarr;</span></button></div>
       </article>
-      <article class="project">
-        <div class="media-placeholder"><span>MEDIA / 04</span><small>Add photo, video, or GIF</small></div>
-        <div class="project-copy"><div class="project-meta"><span>BIOMECHANICS / EXPERIMENTATION</span><span>04 / 05</span></div><h3>ShinSavers</h3><p>An experimental wearable concept for attenuating running impacts, evaluated through a repeatable treadmill test using accelerometers and Python-based data processing.</p><ul class="tags"><li>Accelerometers</li><li>Python</li><li>Experimental Design</li><li>Prototyping</li></ul><span class="project-link muted">Case study coming soon ↗</span></div>
+      <article class="project" id="shinsavers">
+        <div class="project-visuals"><div class="media-placeholder project-cover"><span>SHINSAVERS / COVER</span><small>Put your best photo, GIF, or demo here</small></div><div class="media-thumbnails"><div class="media-slot">PROTOTYPE</div><div class="media-slot">TEST SETUP</div></div></div>
+        <div class="project-copy"><div class="project-meta"><span>Research</span><span>04 / 05</span></div><h3>ShinSavers</h3><p>A wearable running-impact prototype, tested with accelerometers.</p><ul class="tags"><li>Accelerometers</li><li>Python</li><li>Experimental Design</li><li>Prototyping</li></ul><button class="project-link project-open" type="button" data-project="shinsavers">Learn more <span>&rarr;</span></button></div>
       </article>
-      <article class="project">
-        <div class="media-placeholder"><span>MEDIA / 05</span><small>Add photo, video, or GIF</small></div>
-        <div class="project-copy"><div class="project-meta"><span>FULL-STACK / PRODUCT</span><span>05 / 05</span></div><h3>RetiBox AR Platform</h3><p>A browser-based platform that turns photos into shareable augmented-reality models. Built and launched as technical lead of a three-person team.</p><ul class="tags"><li>Django</li><li>Python</li><li>HTML/CSS</li><li>AWS Amplify</li></ul><span class="project-link muted">Case study coming soon ↗</span></div>
+      <article class="project" id="retibox">
+        <div class="project-visuals"><div class="media-placeholder project-cover"><span>RETIBOX / COVER</span><small>Put your best photo, GIF, or demo here</small></div><div class="media-thumbnails"><div class="media-slot">PRODUCT SCREEN</div><div class="media-slot">DEMO VIDEO</div></div></div>
+        <div class="project-copy"><div class="project-meta"><span>Startup Prototype</span><span>05 / 05</span></div><h3>RetiBox AR Platform</h3><p>Make and share AR models from a browser.</p><ul class="tags"><li>Django</li><li>Python</li><li>HTML/CSS</li><li>AWS Amplify</li></ul><button class="project-link project-open" type="button" data-project="retibox">Learn more <span>&rarr;</span></button></div>
       </article>
+    </div>
+  </section>
+
+  <section class="project-panel" id="project-panel" aria-hidden="true" aria-labelledby="project-panel-title" role="dialog" aria-modal="true">
+    <div class="panel-top"><button class="return-button" type="button" id="project-return">&larr; Return to projects</button><span class="panel-number" id="panel-number"></span></div>
+    <div class="panel-content">
+      <div><span class="eyebrow" id="panel-category"></span><h2 id="project-panel-title"></h2></div>
+      <div class="panel-summary" id="panel-summary"></div>
+      <div class="panel-grid"><div><h3>What I made</h3><p id="panel-built"></p></div><div><h3>Key work</h3><p id="panel-focus"></p></div></div>
+      <div class="panel-media-grid"><div class="panel-media panel-media-main"><span>HERO PHOTO OR VIDEO</span><small>Use your strongest visual here.</small></div><div class="panel-media"><span>BUILD / CAD</span><small>Show how it came together.</small></div><div class="panel-media"><span>TEST / RESULT</span><small>Show it working.</small></div></div>
     </div>
   </section>
 
   <section class="section experience-section" id="experience">
-    <div class="section-heading light"><div><span class="eyebrow">02 / EXPERIENCE</span><h2>Beyond the build</h2></div><p>I care about making systems reproducible, teachable, and useful—not just getting a prototype to move once.</p></div>
+    <div class="section-heading light"><div><span class="eyebrow">02 / EXPERIENCE</span><h2>Experience</h2></div><p></p></div>
     <div class="experience-grid">
-      <article><div class="role-top"><span>2026—PRESENT</span><span>AUSTIN / HOUSTON</span></div><h3>Robotics Engineer</h3><h4>LearnToBot</h4><p>Developed 10+ robotics projects for six camps across three cities, spanning CAD, electronics, embedded code, instructional documentation, and DFM for 3D printing.</p></article>
-      <article><div class="role-top"><span>2026</span><span>THE WOODLANDS, TX</span></div><h3>Head of Growth &amp; Head Coach</h3><h4>KEB Tennis Camps</h4><p>Tripled revenue while expanding to 190+ campers, generated 25K+ campaign impressions, and managed ten assistant coaches across a level-based program.</p></article>
+      <article><div class="role-top"><span>APR 2026 - PRESENT</span><span>TEXAS</span></div><h3>Robotics Engineer</h3><h4>LearnToBot</h4><p>Develop 10+ robotics projects for six camps across three cities, spanning CAD, electronics, embedded code, and design-for-manufacturing. Create assembly manuals, wiring diagrams, and instructional documentation so students can build with confidence.</p></article>
+      <article><div class="role-top"><span>APR - JUL 2026</span><span>THE WOODLANDS, TX</span></div><h3>Head of Growth &amp; Head Coach</h3><h4>KEB Tennis Camps</h4><p>Tripled revenue while expanding the program to 190+ campers. Led growth campaigns that generated 25K+ impressions, managed ten assistant coaches, and developed a level-based daily curriculum.</p></article>
     </div>
   </section>
 
   <section class="section about-section" id="about">
-    <div class="about-statement"><span class="eyebrow">03 / ABOUT</span><p>I like the messy middle where <strong>mechanical design, electronics, and software</strong> have to agree with each other.</p></div>
+    <div class="about-statement"><span class="eyebrow">03 / ABOUT</span><p></p></div>
     <div class="about-grid">
-      <div><p>I'm an incoming Mechanical Engineering student at The University of Texas at Austin pursuing robotics. My goal is to build deeply integrated robotic systems—and understand each layer well enough to make the whole thing better.</p><p>Outside the lab, I'm a UIL 6A team tennis state champion and a builder who learns fastest by shipping.</p></div>
-      <div class="toolkit"><h3>Current toolkit</h3><dl><div><dt>Software</dt><dd>Python, CircuitPython, OpenCV, C++, HTML/CSS, Git</dd></div><div><dt>Hardware</dt><dd>ESP32, Raspberry Pi, IMUs, motor control, power systems</dd></div><div><dt>Design</dt><dd>SolidWorks, Onshape, FDM 3D printing, rapid prototyping</dd></div></dl></div>
+      <div><p>I’m starting Mechanical Engineering at The University of Texas at Austin in Fall 2026 and plan to pursue a robotics minor. I’m looking for project teams, research opportunities, and internships where I can contribute, learn quickly, and make physical systems more capable.</p>
+        <p>Outside the workshop, I’m a UIL 6A Team Tennis State Champion and a builder who learns fastest by getting a prototype in motion.</p>
+      <p>Contact at: nachi [at] gmail (dot) com</p></div>
+
+
     </div>
   </section>
 
-  <section class="contact-section"><span class="eyebrow">04 / CONTACT</span><h2>Let's build something<br><em>that moves.</em></h2><div class="contact-links"><a href="mailto:nachi.gulati@gmail.com">Email me ↗</a><a href="https://github.com/Nachi-G" target="_blank" rel="noreferrer">GitHub ↗</a><a href="./Nachiketa-Gulati-Resume.pdf" download>Résumé ↗</a></div></section>
-  <footer><span>© 2026 Nachiketa Gulati</span><span>Designed to evolve with every build.</span></footer>
+
+  <footer><span>&copy; 2026 Nachiketa Gulati</span></footer>
 </main>
+<script>
+  const projectDetails = {
+    rover: { number: '01 / 05', category: 'EMBEDDED AI / ROBOTICS', title: 'Voice-Controlled ESP32-S3 Rover', summary: 'A mobile robot that turns spoken directions into physical motion.', built: 'An ESP32-S3 rover paired with a voice-command pipeline. Whisper handles transcription, Gemma interprets the command, and the rover executes the resulting motor instructions.', focus: 'Connecting an AI-assisted voice interface to embedded hardware reliably and keeping the path from spoken instruction to motor output understandable.' },
+    balancing: { number: '02 / 05', category: 'CONTROLS / RAPID PROTOTYPING', title: 'PID Self-Balancing Robot', summary: 'A two-wheeled robot designed to stay upright through continuous feedback and control.', built: 'A balancing platform with IMU sensing, PID control, motor control, power distribution, and a 3D-printed chassis built for iteration.', focus: 'Learning how sensor feedback, controller tuning, mechanical layout, and motor response work together in a physical system.' },
+    goalie: { number: '03 / 05', category: 'COMPUTER VISION / MECHATRONICS', title: 'OpenCV Soccer Goalie', summary: 'A real-time system that sees an incoming ball and moves a physical mechanism to block it.', built: 'A computer-vision workflow that tracks a moving ball, estimates its trajectory, and sends commands to a goalkeeper mechanism.', focus: 'Bridging perception and action: turning video data into a timely, useful physical response.' },
+    shinsavers: { number: '04 / 05', category: 'BIOMECHANICS / EXPERIMENTATION', title: 'ShinSavers', summary: 'A wearable prototype explored through repeatable impact testing.', built: 'A device concept intended to attenuate running impact forces, plus a treadmill-based test using accelerometers and Python analysis to compare materials.', focus: 'Designing an experiment that makes prototype evaluation more repeatable and more useful than intuition alone.' },
+    retibox: { number: '05 / 05', category: 'FULL-STACK / PRODUCT', title: 'RetiBox AR Platform', summary: 'A browser-based platform for creating and sharing augmented-reality models from photos.', built: 'A functional prototype using Django, Python, HTML/CSS, and AWS Amplify. I founded and led the three-person team behind the product.', focus: 'Owning a product from concept through a deployed prototype while making the experience accessible without an app download.' }
+  };
+
+  const panel = document.querySelector('#project-panel');
+  const returnButton = document.querySelector('#project-return');
+  let lastTrigger = null;
+
+  document.querySelectorAll('.project-open').forEach((button) => button.addEventListener('click', () => {
+    const detail = projectDetails[button.dataset.project];
+    lastTrigger = button;
+    document.querySelector('#panel-number').textContent = detail.number;
+    document.querySelector('#panel-category').textContent = detail.category;
+    document.querySelector('#project-panel-title').textContent = detail.title;
+    document.querySelector('#panel-summary').textContent = detail.summary;
+    document.querySelector('#panel-built').textContent = detail.built;
+    document.querySelector('#panel-focus').textContent = detail.focus;
+    panel.classList.add('is-open');
+    panel.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('panel-open');
+    returnButton.focus();
+  }));
+
+  function closePanel() {
+    panel.classList.remove('is-open');
+    panel.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('panel-open');
+    lastTrigger?.focus({ preventScroll: true });
+  }
+  returnButton.addEventListener('click', closePanel);
+  document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && panel.classList.contains('is-open')) closePanel(); });
+</script>
 </body>
 </html>
