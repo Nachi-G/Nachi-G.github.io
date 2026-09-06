@@ -114,8 +114,9 @@ body.panel-open { overflow: hidden; }
 footer { background: var(--ink); color: rgba(255,255,255,.55); padding: 28px clamp(24px, 5vw, 80px); display: flex; justify-content: space-between; gap: 20px; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
 
 @media (max-width: 800px) {
-  .site-header { height: 70px; }
-  nav a:not(.nav-cta) { display: none; }
+  .site-header { height: 70px; gap: 16px; }
+  nav { gap: clamp(8px, 2.5vw, 16px); font-size: 11px; }
+  nav a { white-space: nowrap; }
   .hero { min-height: 0; padding-top: 40px; grid-template-columns: minmax(0, 1fr) 120px; gap: 22px; align-items: start; }
   .hero:before { right: -100px; top: -100px; }
   .hero-copy { display: contents; }
